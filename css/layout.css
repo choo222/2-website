@@ -1,9 +1,10 @@
 /* header_______________________________________________________________________ */
 header{
   position: fixed;
-  top: 20px;left: 0;
+  top: 0px;left: 0;
   width: 100%;
-  height: 80px;
+  height: 120px;
+  padding-top: 20px;
   transition: 0.6s;
   /* border-bottom: 1px solid #fff; */
   z-index: 5;
@@ -17,26 +18,26 @@ header{
   justify-content: space-between;
   align-items: center;
 }
-.logo img{
-  width: 115px;height: 50px;
-}
-.gnb{
-  display: flex;
-}
+.logo img{width: 115px;height: 50px;}
+.logo a img:nth-child(1){display: block;}
+.logo a img:nth-child(2){display: none;}
+.gnb{display: flex;}
 .gnb li a{
   display: inline-block;
   width: 200px;height: 80px;
+  color: #fff;
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
   line-height: 80px;
+  transition: 0.2s;
 }
+.gnb li a:hover{color: #5d6ec7;}
 .headRight{
   display: flex;
   justify-content: center;
   align-items: center;
-
   gap: 20px;
 }
 .iconBox a{
@@ -46,7 +47,11 @@ header{
   text-align: center;
   line-height: 25px;
 }
-.fa-solid{transform: scale(1.2);}
+.fa-solid{
+  transform: scale(1.2);
+  transition: 0.15s;
+}
+.iconBox a:hover .fa-solid{transform: scale(1.4);}
 .btnAllMenu{
   display: inline-block;
   width: 35px;height: 28px;
@@ -97,7 +102,7 @@ body {
   position: absolute;
   top: 0;left: 0;
   width: 100%;height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10% 80%, rgba(0,0,0,0.3) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 10% 70%, rgba(0,0,0,0.5) 100%);
 }
 .swiper-slide img {
   display: block;
@@ -122,7 +127,7 @@ div.swiper-button-next:after{
 }
 
 
-/* mainWrap___________________________________________________________________ */
+/* mainContainer___________________________________________________________________ */
 /* sec1__________________________________________________ */
 .sec1{
   width: 100%;height: 1150px;
@@ -145,9 +150,7 @@ div.swiper-button-next:after{
   top: 0;left: 50%;
   transform: translateX(-50%);
 }
-.sec1Tit{
-  color: #A4C4FF;
-}
+.sec1Tit{color: #A4C4FF;}
 .sec1Tit h3{padding-bottom: 10px;}
 
 
@@ -257,9 +260,7 @@ div.swiper-button-next:after{
   top: 0;left: 50%;
   transform: translateX(-50%);
 }
-.sec2Tit{
-  color: #8FB6FF;
-}
+.sec2Tit{color: #8FB6FF;}
 .sec2Under{
   position: relative;
   width: 100%;height: 700px;

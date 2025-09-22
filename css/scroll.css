@@ -1,0 +1,23 @@
+/* header scroll */
+header.load{top: 0;}
+header.down{
+  height: 80px;
+  background-color: #fff;
+  border-bottom: 1px solid #d5e4ff;
+  top: 0;
+  padding-top: 0;
+}
+
+header.down .headInner{
+  border-bottom: 2px solid transparent;
+}
+header.down .headInner .logo a img:nth-child(1){display: none;}
+header.down .headInner .logo a img:nth-child(2){display: block;}
+
+header.down .gnb li a{
+  color: #A4C4FF;
+  transition: 0.2s;
+}
+header.down .gnb li a:hover{color: #5d6ec7;}
+header.down .btnAllMenu span{background-color: #A4C4FF;}
+header.down .iconBox a{color: #A4C4FF;}
