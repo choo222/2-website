@@ -1,0 +1,4 @@
+@keyframes updown{
+  0%{top: 20;}
+  100%{top: -30px;}
+}
