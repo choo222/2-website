@@ -1,11 +1,13 @@
 
 /* header */
 .subHeader{position: static;}
+.subHeader .logo a img:nth-child(1){display: none;}
+.subHeader .logo a img:nth-child(2){display: block;}
 .subHeader .gnb li a,
 .subHeader .headRight .iconBox a{color: #A4C4FF;}
-.subHeader .headRight .btnAllMenu span{background-color: #A4C4FF;}
-.subHeader .gnb li a:hover{color: #5d6ec7;}
-.subHeader .headRight .iconBox a:hover{color: #5d6ec7;}
+.subHeader .headRight .iconBox a:hover .fa-solid{color: #5d6ec7;}
+.subHeader .gnb>li>a:hover{color: #5d6ec7;}
+.subHeader .gnb>li:hover >a{border-bottom: 2px solid #e0ebff;}
 
 /* subVisual */
 .subVisual{
@@ -14,19 +16,17 @@
 }
 
 .subContainer{width: 100%;height: max-content;}
-.subSec{
-  width: 100%;height: max-content;
-}
+.subSec{width: 100%;height: max-content;}
 
-
-.panel>li{display: none;}
-.panel>li.active{display: block;}
+.tabmenu .panel>li{display: none !important;}
+.tabmenu .panel>li.active{display: block !important;}
 /* 섬유유연제 향수컬렉션 */
 .tabmenu{color: #333;}
 
 .tabmenu h2{
   text-align: center;
   margin: 80px 0;
+  color: #5d6ec7;
 }
 .tab1{
   display: flex;
@@ -42,15 +42,15 @@
   line-height: 50px;
   cursor: pointer;
 }
-.tab1 li.active{background-color: #fafafa;
+.tab1 li.active{background-color: #fbfbfb;
   border-bottom-width: 0;
 }
-/* tab1-1 */
-#tab1-1{
+/* tab11 */
+.tabInner{
   display: flex;
   justify-content: center;
-  gap: 50px;
-  background-color: #fafafa;
+  gap: 30px;
+  background-color: #fbfbfb;
   padding: 100px 0;
   margin-bottom: 50px;
 }
@@ -61,6 +61,7 @@
   display: none;
   box-shadow: 0 0 4px #8894EE;
 }
+#tab14 .productImg{box-shadow: 0 0 4px #ffb6d8;}
 .productImg.active{display: block;}
 .productImg img{height: 100%;}
 
@@ -70,9 +71,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 20px 20px;
+  border: solid #ddd;
+  border-width: 1px 0;
 }
-.contentTop{}
 .contentTit{
   font-size: 28px;
   font-family: 'MaruBuri';
@@ -85,11 +87,9 @@
 }
 .productInfo{
   margin: 10px 10px;
-  transform: translateY(80px);
+  transform: translateY(70px);
 }
-.content h3{
-  font-weight: 600;
-}
+.content h3{font-weight: 600;}
 .content h4{
   margin: 0 0 10px 0;
   color: #555;
@@ -130,6 +130,8 @@
   opacity: 0.6;
   box-shadow: 0 0 4px #8894EE;
 }
+#tab14 .thumb{box-shadow: 0 0 4px #ffb6d8;}
+#tab14 .thumb.active{border: 2px solid rgb(255, 196, 221);}
 .thumb.active{
   opacity: 1;
   border: 2px solid rgba(136, 148, 238, 0.7);

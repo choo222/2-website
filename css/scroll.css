@@ -7,17 +7,29 @@ header.down{
   top: 0;
   padding-top: 0;
 }
+.headInnerH{background-color: #fff;}
+.headInnerH .logo a img:nth-child(1){display: none;}
+.headInnerH .logo a img:nth-child(2){display: block;}
 
 header.down .headInner{
-  border-bottom: 2px solid transparent;
+  padding: 10px 200px 0 200px;
 }
 header.down .headInner .logo a img:nth-child(1){display: none;}
 header.down .headInner .logo a img:nth-child(2){display: block;}
+.subHeader 
 
-header.down .gnb li a{
+header.down .gnb li a,
+.headInnerH .gnb>li>a{
   color: #A4C4FF;
   transition: 0.2s;
 }
-header.down .gnb li a:hover{color: #5d6ec7;}
-header.down .btnAllMenu span{background-color: #A4C4FF;}
-header.down .iconBox a{color: #A4C4FF;}
+header.down .gnb>li>a:hover{color: #5d6ec7;}
+header.down .gnb>li:hover >a{border-bottom: 2px solid #e0ebff;}
+header.down .iconBox a,
+.headInnerH .iconBox a
+{color: #A4C4FF;}
+
+header.down .iconBox a:hover .fa-solid{
+  transform: scale(1.4);
+  color: #A4C4FF;
+}
