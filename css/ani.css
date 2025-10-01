@@ -2,3 +2,100 @@
   0%{top: 20;}
   100%{top: -30px;}
 }
+
+/* Scroll Animation */
+
+/* y축 이동 공통 */
+.ani.y_Bottom{
+  opacity: 0;
+  transform: translateY(40px);
+}
+.ani.y_Bottom.moving{
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 1s;
+}
+
+/* x축 이동 */
+/* left 공통*/
+.ani.x_Left{
+  opacity: 0;
+  transform: translateX(-40px);
+}
+.ani.x_Left.moving{
+  opacity: 1;
+  transform: translateX(0px);
+  transition: 1s;
+}
+
+/* main sec2 */
+.sec2UTL.ani.x_Left{transform: translateX(-200px);}
+.sec2UTL.ani.x_Left.moving{
+  opacity: 0.5;
+  transform: translateX(0px) scale(0.97);
+  transition: 0.5s;
+}
+.sec2UTL.ani.x_Left.moving:hover{
+  opacity: 1;
+  transform: scale(1);
+}
+/* story1 */
+.bgNum.ani.x_Left{transform: translateX(calc(-50% - 100px));}
+.bgNum.ani.x_Left.moving{transform: translateX(-50%);}
+
+/* right 공통*/
+.ani.x_Right{
+  opacity: 0;
+  transform: translateX(40px);
+}
+.ani.x_Right.moving{
+  opacity: 1;
+  transform: translateX(0px);
+  transition: 1s;
+}
+
+/* main sec2 */
+.sec2UTR.ani.x_Right{transform: translateX(200px);}
+.sec2UTR.ani.x_Right.moving{
+  opacity: 0.5;
+  transform: translateX(0px) scale(0.97);
+  transition: 0.5s;
+}
+.sec2UTR.ani.x_Right.moving:hover{
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* story1 */
+.introTxt.ani.x_Right{transform: translateX(calc(-50% + 40px));}
+.introTxt.ani.x_Right.moving{transform: translateX(-50%);}
+
+/* img scale 공통*/
+.ani.scale_Img img{
+  opacity: 0;
+  transform: scale(1.2);
+}
+.ani.scale_Img.moving img{
+  opacity: 1;
+  transform: scale(1);
+  transition: 1s ease-in-out;
+}
+
+/* scale_Up */
+.ani.scale_Up{
+  opacity: 0;
+  transform: scale(0.8);
+}
+.ani.scale_Up.moving{
+  opacity: 1;
+  transform: scale(1);
+  transition: 1s ease-in-out;
+}
+
+/* story2 ingre */
+
+.scCard.ani.scale_Up.moving{transition: 0.35s;}
+.scCard.ani.scale_Up.moving:hover{
+  transform: scale(1) translateY(50px);
+  transition: 0.35s;
+}

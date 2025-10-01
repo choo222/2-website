@@ -16,7 +16,7 @@ header.down .headInner{
 }
 header.down .headInner .logo a img:nth-child(1){display: none;}
 header.down .headInner .logo a img:nth-child(2){display: block;}
-.subHeader 
+
 
 header.down .gnb li a,
 .headInnerH .gnb>li>a{
@@ -25,10 +25,11 @@ header.down .gnb li a,
 }
 header.down .gnb>li>a:hover{color: #5d6ec7;}
 header.down .gnb>li:hover >a{border-bottom: 2px solid #e0ebff;}
-header.down .iconBox a,
-.headInnerH .iconBox a
+header.down .iconBox a .fa-solid,
+.headInnerH .iconBox a .fa-solid
 {color: #A4C4FF;}
 
+header.down .iconBox a .fa-solid{color: #A4C4FF;}
 header.down .iconBox a:hover .fa-solid{
   transform: scale(1.4);
   color: #A4C4FF;

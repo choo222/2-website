@@ -14,11 +14,26 @@ $(function(){
   },function(){
     $(".headInner").removeClass('headInnerH');
   });
-  
+
+  //story3 process
+  $(".pCardBottom").hover(function(){
+    $(this).siblings('.pCardTop').addClass('pCardTopH');
+  },function(){
+    $(this).siblings('.pCardTop').removeClass('pCardTopH');
+  });
+
+  //more1 accordionSec
+  $(".title").click(function(){
+    $(this).siblings(".title").removeClass("active");
+    $(this).toggleClass("active");
+    $(this).siblings(".content").stop().slideUp();
+    $(this).next().stop().slideToggle();
+  });
+
   //Header load&scroll
   let ani = $(".ani");
 
-  $(window).on("load scroll", function(){ //on-2개 이상의 이벤트를 사용할때
+  $(window).on("load scroll", function(){
     const header = $("header");
     const visuHeight = $(".visual").outerHeight();
     const h_Height = header.outerHeight();
@@ -37,10 +52,27 @@ $(function(){
       header.removeClass("down");
     };
 
-  
+    // Scroll Event
+    $.fn.scrollMoving = function(){
+      let elementTop = $(this).offset().top;
+      let elementBottom = elementTop + $(this).outerHeight();
 
+      let viewportTop = $(window).scrollTop();
+      let viewportBottom = viewportTop + $(window).height();
 
-    
+      return (viewportTop < elementBottom) && (elementTop < viewportBottom);
+    };
+
+    $(window).on('load scroll',function(){
+      ani.each(function(){
+        if($(this).scrollMoving()){
+          $(this).addClass("moving");
+        }else{
+          $(this).removeClass("moving");
+        };
+      });
+    });
+
   });
 
 });
