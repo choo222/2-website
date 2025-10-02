@@ -47,10 +47,7 @@
   text-align: center;
 }
 .subSecTit h2{color: #5d6ec7;}
-.subSec h5{
-  color: #999;
-  line-height: 26px;
-}
+.subSec h5{color: #999;}
 
 
 /* topBtn 공통 */
@@ -245,11 +242,10 @@ input[type="password"]::placeholder{
 
 /* story____________________________________________________ */
 /* sVisualBtn */
-.storyVisual .sVisualBtn{width: calc(100% / 4);}
+.storyVisual .sVisualBtn{width: calc(100% / 3);}
 .storyVisual .svBtn1{background: url(../image/sVisual1-1.webp) no-repeat center/cover;}
 .storyVisual .svBtn2{background: url(../image/sVisual1-2.jpg) no-repeat center/cover;}
 .storyVisual .svBtn3{background: url(../image/sVisual1-3.webp) no-repeat center/cover;}
-.storyVisual .svBtn4{background: url(../image/sVisual1-4.webp) no-repeat center/cover;}
 
 /* story1 */
 .story1{margin-top: 80px;}
@@ -299,6 +295,7 @@ input[type="password"]::placeholder{
 .introTxt p b{font-weight: 800;}
 
 /* story2 */
+.story2 .subSecTit{margin: 80px 0 30px 0;}
 .storyContent{
   padding: 30px 0 80px 0;
   text-align: center;
@@ -353,7 +350,6 @@ input[type="password"]::placeholder{
   overflow: hidden;
   border-radius: 10px;
   width: 300px;height: 200px;
-  /* transform: translateY(50px); */
 }
 .scCard:hover:before{background: url(../image/bubbleRect.png);}
 .scCard:hover h3{
