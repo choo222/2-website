@@ -1,5 +1,5 @@
 @keyframes updown{
-  0%{top: 20;}
+  0%{top: 0;}
   100%{top: -30px;}
 }
 

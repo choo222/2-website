@@ -279,6 +279,7 @@ input[type="password"]::placeholder{
   z-index: -1;
 }
 .introTxt{
+  width: 100%;
   text-align: center;
   position: absolute;
   top: 50%;left: 50%;
@@ -291,11 +292,11 @@ input[type="password"]::placeholder{
 }
 .introTxt p{
   font-size: 16px;
-  font-weight: 200;
-  color: #555;
+  font-weight: 500;
+  color: #666;
   line-height: 27px;
 }
-.introTxt p b{font-weight: 500;}
+.introTxt p b{font-weight: 800;}
 
 /* story2 */
 .storyContent{
@@ -503,7 +504,7 @@ input[type="password"]::placeholder{
 .urea:before{
   content: '\e14b';
   font-family: 'Material Symbols Outlined';
-  font-weight: light;
+  font-weight: 500;
   font-size: 16px;
   margin-right: 6px;
   color: red;
